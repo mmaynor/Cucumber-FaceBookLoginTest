@@ -1,0 +1,222 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#This is how background can be used to eliminate duplicate steps"
+          }
+        ],
+        "line": 4,
+        "name": "",
+        "description": " User navigates to Facebook Given \n I am on Facebook login page",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "comments": [
+          {
+            "line": 8,
+            "value": "#Scenario with AND"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 7921666596,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FaceBookLogin.goToFacebook()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "",
+        "description": "",
+        "id": "annotation;",
+        "after": [
+          {
+            "result": {
+              "duration": 1726319994,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FaceBookLogin.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 631534695,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter username as \"TOM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TOM",
+                  "offset": 21
+                }
+              ],
+              "location": "FaceBookLogin.enterUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5675305694,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter password as \"JERRY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JERRY",
+                  "offset": 21
+                }
+              ],
+              "location": "FaceBookLogin.enterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3334061,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Login should fail",
+            "match": {
+              "location": "FaceBookLogin.checkFail()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#This is how background can be used to eliminate duplicate steps"
+          }
+        ],
+        "line": 4,
+        "name": "",
+        "description": " User navigates to Facebook Given \n I am on Facebook login page",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "comments": [
+          {
+            "line": 14,
+            "value": "#Scenario with BUT"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 8882855018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FaceBookLogin.goToFacebook()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "annotation;",
+        "after": [
+          {
+            "result": {
+              "duration": 2161292866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FaceBookLogin.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56169552,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter username as \"TOM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TOM",
+                  "offset": 21
+                }
+              ],
+              "location": "FaceBookLogin.enterUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5316028866,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter password as \"JERRY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JERRY",
+                  "offset": 21
+                }
+              ],
+              "location": "FaceBookLogin.enterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3134946,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Login should fail",
+            "match": {
+              "location": "FaceBookLogin.checkFail()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2966620,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Relogin option should be available",
+            "match": {
+              "location": "FaceBookLogin.checkRelogin()"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "annotation",
+    "description": "",
+    "id": "annotation",
+    "keyword": "Feature",
+    "uri": "login/login.feature"
+  }
+]
