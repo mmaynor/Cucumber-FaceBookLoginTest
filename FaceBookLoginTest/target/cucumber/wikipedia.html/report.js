@@ -7,17 +7,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7921666596,
+  "duration": 11874350103,
   "status": "passed"
 });
 formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#This is how background can be used to eliminate duplicate steps"
-    }
-  ],
-  "line": 4,
+  "line": 3,
   "name": "",
   "description": " User navigates to Facebook Given \n I am on Facebook login page",
   "type": "background",
@@ -26,11 +20,11 @@ formatter.background({
 formatter.scenario({
   "comments": [
     {
-      "line": 8,
+      "line": 7,
       "value": "#Scenario with AND"
     }
   ],
-  "line": 9,
+  "line": 8,
   "name": "",
   "description": "",
   "id": "annotation;",
@@ -38,17 +32,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "I enter username as \"TOM\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "I enter password as \"JERRY\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "Login should fail",
   "keyword": "Then "
 });
@@ -62,7 +56,7 @@ formatter.match({
   "location": "FaceBookLogin.enterUsername(String)"
 });
 formatter.result({
-  "duration": 631534695,
+  "duration": 154493367,
   "status": "passed"
 });
 formatter.match({
@@ -75,32 +69,26 @@ formatter.match({
   "location": "FaceBookLogin.enterPassword(String)"
 });
 formatter.result({
-  "duration": 5675305694,
+  "duration": 5353931491,
   "status": "passed"
 });
 formatter.match({
   "location": "FaceBookLogin.checkFail()"
 });
 formatter.result({
-  "duration": 3334061,
+  "duration": 4720893,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1726319994,
+  "duration": 1990525781,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8882855018,
+  "duration": 11882499482,
   "status": "passed"
 });
 formatter.background({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#This is how background can be used to eliminate duplicate steps"
-    }
-  ],
-  "line": 4,
+  "line": 3,
   "name": "",
   "description": " User navigates to Facebook Given \n I am on Facebook login page",
   "type": "background",
@@ -109,11 +97,11 @@ formatter.background({
 formatter.scenario({
   "comments": [
     {
-      "line": 14,
+      "line": 13,
       "value": "#Scenario with BUT"
     }
   ],
-  "line": 15,
+  "line": 14,
   "name": "",
   "description": "",
   "id": "annotation;",
@@ -121,22 +109,22 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "I enter username as \"TOM\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "I enter password as \"JERRY\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "Login should fail",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "Relogin option should be available",
   "keyword": "But "
 });
@@ -150,7 +138,7 @@ formatter.match({
   "location": "FaceBookLogin.enterUsername(String)"
 });
 formatter.result({
-  "duration": 56169552,
+  "duration": 60192514,
   "status": "passed"
 });
 formatter.match({
@@ -163,25 +151,25 @@ formatter.match({
   "location": "FaceBookLogin.enterPassword(String)"
 });
 formatter.result({
-  "duration": 5316028866,
+  "duration": 5327834178,
   "status": "passed"
 });
 formatter.match({
   "location": "FaceBookLogin.checkFail()"
 });
 formatter.result({
-  "duration": 3134946,
+  "duration": 3644025,
   "status": "passed"
 });
 formatter.match({
   "location": "FaceBookLogin.checkRelogin()"
 });
 formatter.result({
-  "duration": 2966620,
+  "duration": 15792579178,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2161292866,
+  "duration": 2113358497,
   "status": "passed"
 });
 });

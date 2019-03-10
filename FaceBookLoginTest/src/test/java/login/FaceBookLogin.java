@@ -1,9 +1,10 @@
 package login;
 
-
-import org.openqa.selenium.By; 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; 
-import org.openqa.selenium.firefox.FirefoxDriver; 
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -13,13 +14,14 @@ import cucumber.api.java.en.When;
 
 public class FaceBookLogin { 
    WebDriver driver = null; 
+  // WebDriverWait wait;
    @Given("^I am on Facebook login page$") 
 
    @Before
    public void goToFacebook() { 
 	   System.setProperty("webdriver.gecko.driver","C:\\Users\\Mine\\Downloads\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 	   driver = new FirefoxDriver(); 
-	   driver.navigate().to("https://www.facebook.com/"); 
+	   driver.navigate().to("https://www.facebook.com/");
    }
    
    @After
@@ -35,7 +37,7 @@ public class FaceBookLogin {
    @When ("^I enter password as \"(.*)\"$") 
    public void enterPassword(String arg1) {
       driver.findElement(By.id("pass")).sendKeys(arg1);
-      driver.findElement(By.xpath("//input[@data-testid = 'royal_login_button']")).click();    
+      driver.findElement(By.xpath("// input[@data-testid = 'royal_login_button']")).click();
    } 
 	
    @Then("^Login should fail$") 
@@ -49,7 +51,8 @@ public class FaceBookLogin {
    } 
 	
    @Then("^Relogin option should be available$") 
-   public void checkRelogin() { 
+   public void checkRelogin() {
+	  new WebDriverWait(driver, 20).until(ExpectedConditions.urlToBe("https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110"));
       if(driver.getCurrentUrl().equalsIgnoreCase(
          "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110")){ 
             System.out.println("Test2 Pass"); 
