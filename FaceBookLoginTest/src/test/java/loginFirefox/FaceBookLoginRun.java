@@ -1,4 +1,4 @@
-package login;
+package loginFirefox;
 
 import org.junit.runner.RunWith;
  

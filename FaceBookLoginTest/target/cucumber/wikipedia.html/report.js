@@ -1,175 +1,304 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("loginChrome/login.feature");
 formatter.feature({
   "line": 1,
-  "name": "annotation",
+  "name": "Loging in using different usernames and passwords that will fail",
   "description": "",
-  "id": "annotation",
+  "id": "loging-in-using-different-usernames-and-passwords-that-will-fail",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 11874350103,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "",
-  "description": " User navigates to Facebook Given \n I am on Facebook login page",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 7,
-      "value": "#Scenario with AND"
-    }
-  ],
-  "line": 8,
-  "name": "",
+formatter.scenarioOutline({
+  "line": 7,
+  "name": "Login fail - possible combinations",
   "description": "",
-  "id": "annotation;",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 8,
+  "name": "I enter username as \"\u003cUserName\u003e\"",
+  "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "I enter username as \"TOM\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "I enter password as \"JERRY\"",
+  "name": "I enter password as \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "Login should fail",
   "keyword": "Then "
 });
-formatter.match({
-  "arguments": [
+formatter.examples({
+  "line": 12,
+  "name": "",
+  "description": "",
+  "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;",
+  "rows": [
     {
-      "val": "TOM",
-      "offset": 21
+      "cells": [
+        "UserName",
+        "Password"
+      ],
+      "line": 13,
+      "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;1"
+    },
+    {
+      "cells": [
+        "wrongusername",
+        "123456"
+      ],
+      "line": 14,
+      "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;2"
+    },
+    {
+      "cells": [
+        "ShankarGarg",
+        "wrongpassword"
+      ],
+      "line": 15,
+      "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;3"
+    },
+    {
+      "cells": [
+        "wrongusername",
+        "wrongpassword"
+      ],
+      "line": 16,
+      "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;4"
     }
   ],
-  "location": "FaceBookLogin.enterUsername(String)"
-});
-formatter.result({
-  "duration": 154493367,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "JERRY",
-      "offset": 21
-    }
-  ],
-  "location": "FaceBookLogin.enterPassword(String)"
-});
-formatter.result({
-  "duration": 5353931491,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FaceBookLogin.checkFail()"
-});
-formatter.result({
-  "duration": 4720893,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1990525781,
-  "status": "passed"
+  "keyword": "Examples"
 });
 formatter.before({
-  "duration": 11882499482,
+  "duration": 5969669936,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
   "name": "",
-  "description": " User navigates to Facebook Given \n I am on Facebook login page",
+  "description": "User navigates to Facebook Given \nI am on Facebook login page",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 13,
-      "value": "#Scenario with BUT"
-    }
-  ],
   "line": 14,
-  "name": "",
+  "name": "Login fail - possible combinations",
   "description": "",
-  "id": "annotation;",
+  "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;2",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 15,
-  "name": "I enter username as \"TOM\"",
+  "line": 8,
+  "name": "I enter username as \"wrongusername\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
-  "name": "I enter password as \"JERRY\"",
+  "line": 9,
+  "name": "I enter password as \"123456\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 10,
   "name": "Login should fail",
   "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "Relogin option should be available",
-  "keyword": "But "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "TOM",
+      "val": "wrongusername",
       "offset": 21
     }
   ],
   "location": "FaceBookLogin.enterUsername(String)"
 });
 formatter.result({
-  "duration": 60192514,
+  "duration": 523732967,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "JERRY",
+      "val": "123456",
       "offset": 21
     }
   ],
   "location": "FaceBookLogin.enterPassword(String)"
 });
 formatter.result({
-  "duration": 5327834178,
+  "duration": 1451807808,
   "status": "passed"
 });
 formatter.match({
   "location": "FaceBookLogin.checkFail()"
 });
 formatter.result({
-  "duration": 3644025,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FaceBookLogin.checkRelogin()"
-});
-formatter.result({
-  "duration": 15792579178,
+  "duration": 4700776,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2113358497,
+  "duration": 664312036,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 4963631593,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
+  "description": "User navigates to Facebook Given \nI am on Facebook login page",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Login fail - possible combinations",
+  "description": "",
+  "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 8,
+  "name": "I enter username as \"ShankarGarg\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "I enter password as \"wrongpassword\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Login should fail",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "ShankarGarg",
+      "offset": 21
+    }
+  ],
+  "location": "FaceBookLogin.enterUsername(String)"
+});
+formatter.result({
+  "duration": 574262820,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "wrongpassword",
+      "offset": 21
+    }
+  ],
+  "location": "FaceBookLogin.enterPassword(String)"
+});
+formatter.result({
+  "duration": 1933416072,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FaceBookLogin.checkFail()"
+});
+formatter.result({
+  "duration": 4421604,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 657573300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 5189249141,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
+  "description": "User navigates to Facebook Given \nI am on Facebook login page",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "Login fail - possible combinations",
+  "description": "",
+  "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 8,
+  "name": "I enter username as \"wrongusername\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 9,
+  "name": "I enter password as \"wrongpassword\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Login should fail",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "wrongusername",
+      "offset": 21
+    }
+  ],
+  "location": "FaceBookLogin.enterUsername(String)"
+});
+formatter.result({
+  "duration": 551069724,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "wrongpassword",
+      "offset": 21
+    }
+  ],
+  "location": "FaceBookLogin.enterPassword(String)"
+});
+formatter.result({
+  "duration": 1708321564,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FaceBookLogin.checkFail()"
+});
+formatter.result({
+  "duration": 4701597,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 675933012,
   "status": "passed"
 });
 });

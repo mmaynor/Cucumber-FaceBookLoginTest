@@ -5,21 +5,15 @@
       {
         "line": 3,
         "name": "",
-        "description": " User navigates to Facebook Given \n I am on Facebook login page",
+        "description": "User navigates to Facebook Given \nI am on Facebook login page",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "comments": [
-          {
-            "line": 7,
-            "value": "#Scenario with AND"
-          }
-        ],
         "before": [
           {
             "result": {
-              "duration": 11874350103,
+              "duration": 5969669936,
               "status": "passed"
             },
             "match": {
@@ -27,14 +21,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "",
+        "line": 14,
+        "name": "Login fail - possible combinations",
         "description": "",
-        "id": "annotation;",
+        "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;2",
         "after": [
           {
             "result": {
-              "duration": 1990525781,
+              "duration": 664312036,
               "status": "passed"
             },
             "match": {
@@ -43,50 +37,56 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 154493367,
+              "duration": 523732967,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I enter username as \"TOM\"",
+            "line": 8,
+            "name": "I enter username as \"wrongusername\"",
             "match": {
               "arguments": [
                 {
-                  "val": "TOM",
+                  "val": "wrongusername",
                   "offset": 21
                 }
               ],
               "location": "FaceBookLogin.enterUsername(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5353931491,
+              "duration": 1451807808,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I enter password as \"JERRY\"",
+            "line": 9,
+            "name": "I enter password as \"123456\"",
             "match": {
               "arguments": [
                 {
-                  "val": "JERRY",
+                  "val": "123456",
                   "offset": 21
                 }
               ],
               "location": "FaceBookLogin.enterPassword(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4720893,
+              "duration": 4700776,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "Login should fail",
             "match": {
               "location": "FaceBookLogin.checkFail()"
@@ -98,21 +98,15 @@
       {
         "line": 3,
         "name": "",
-        "description": " User navigates to Facebook Given \n I am on Facebook login page",
+        "description": "User navigates to Facebook Given \nI am on Facebook login page",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "comments": [
-          {
-            "line": 13,
-            "value": "#Scenario with BUT"
-          }
-        ],
         "before": [
           {
             "result": {
-              "duration": 11882499482,
+              "duration": 4963631593,
               "status": "passed"
             },
             "match": {
@@ -120,14 +114,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "",
+        "line": 15,
+        "name": "Login fail - possible combinations",
         "description": "",
-        "id": "annotation;",
+        "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;3",
         "after": [
           {
             "result": {
-              "duration": 2113358497,
+              "duration": 657573300,
               "status": "passed"
             },
             "match": {
@@ -136,75 +130,162 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 60192514,
+              "duration": 574262820,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I enter username as \"TOM\"",
+            "line": 8,
+            "name": "I enter username as \"ShankarGarg\"",
             "match": {
               "arguments": [
                 {
-                  "val": "TOM",
+                  "val": "ShankarGarg",
                   "offset": 21
                 }
               ],
               "location": "FaceBookLogin.enterUsername(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5327834178,
+              "duration": 1933416072,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I enter password as \"JERRY\"",
+            "line": 9,
+            "name": "I enter password as \"wrongpassword\"",
             "match": {
               "arguments": [
                 {
-                  "val": "JERRY",
+                  "val": "wrongpassword",
                   "offset": 21
                 }
               ],
               "location": "FaceBookLogin.enterPassword(String)"
             },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3644025,
+              "duration": 4421604,
               "status": "passed"
             },
-            "line": 17,
+            "line": 10,
             "name": "Login should fail",
             "match": {
               "location": "FaceBookLogin.checkFail()"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "User navigates to Facebook Given \nI am on Facebook login page",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5189249141,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FaceBookLogin.goToFacebook()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login fail - possible combinations",
+        "description": "",
+        "id": "loging-in-using-different-usernames-and-passwords-that-will-fail;login-fail---possible-combinations;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 675933012,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FaceBookLogin.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 551069724,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter username as \"wrongusername\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "wrongusername",
+                  "offset": 21
+                }
+              ],
+              "location": "FaceBookLogin.enterUsername(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 15792579178,
+              "duration": 1708321564,
               "status": "passed"
             },
-            "line": 18,
-            "name": "Relogin option should be available",
+            "line": 9,
+            "name": "I enter password as \"wrongpassword\"",
             "match": {
-              "location": "FaceBookLogin.checkRelogin()"
+              "arguments": [
+                {
+                  "val": "wrongpassword",
+                  "offset": 21
+                }
+              ],
+              "location": "FaceBookLogin.enterPassword(String)"
             },
-            "keyword": "But "
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4701597,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Login should fail",
+            "match": {
+              "location": "FaceBookLogin.checkFail()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "annotation",
+    "name": "Loging in using different usernames and passwords that will fail",
     "description": "",
-    "id": "annotation",
+    "id": "loging-in-using-different-usernames-and-passwords-that-will-fail",
     "keyword": "Feature",
-    "uri": "login/login.feature"
+    "uri": "loginChrome/login.feature"
   }
 ]
